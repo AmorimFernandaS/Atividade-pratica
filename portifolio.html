@@ -6,6 +6,7 @@
     <title>Meu portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Estilização global da página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,26 +14,34 @@
             background-color: #e3f2fd;
             color: #06090d;
         }
+        
+        /* Estilização do cabeçalho */
         header {
             background-color: #1976d2;
             color: white;
             padding: 15px;
             text-align: center;
         }
+        
+        /* Menu de navegação */
         nav ul {
             list-style: none;
             padding: 0;
         }
+        
         nav ul li {
             display: inline;
             margin: 0 15px;
         }
+        
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
             cursor: pointer;
         }
+        
+        /* Estilização das seções */
         section {
             padding: 20px;
             margin: 20px;
@@ -40,12 +49,16 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        
+        /* Rodapé */
         footer {
             text-align: center;
             padding: 10px;
             background-color: #1565c0;
             color: white;
         }
+        
+        /* Botão para voltar ao topo */
         #topo {
             position: fixed;
             bottom: 20px;
@@ -61,6 +74,7 @@
     </style>
 </head>
 <body>
+    <!-- Cabeçalho do site -->
     <header>
         <h1>Fernanda Amorim</h1>
         <nav>
@@ -74,69 +88,47 @@
         </nav>
     </header>
     
+    <!-- Seção Sobre Mim -->
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Com experiência na área de análise de infraestrutura de nuvem da AWS, gerenciamento e otimização de soluções de nuvem.<br/>
-            Atualmente, também atuo como Product Owner, garantindo a entrega estratégica de projetos por meio da orquestração hábil de equipes multidisciplinares para atender aos objetivos de negócios.<br/>
-            Possuo experiência em boas práticas de cloud e conceitos de cibersegurança, sempre buscando aprendizado contínuo para enfrentar desafios e agregar valor às organizaçõe</p>
+        <p>Com experiência na área de análise de infraestrutura de nuvem da AWS...</p>
     </section>
     
+    <!-- Seção Formação Acadêmica -->
     <section id="formacao">
         <h2>Formação</h2>
-        <p>Ensino Médio Completo Geral - Conclusão: 12/2008 <br/>
-        Ensino superior -Banco de dados- Uninter - Incompleto.<br/>
-        <br/>
-       <b> INFORMAÇÕES ADICIONAIS:</b> <br/>
-● Inglês Básico-FAETEC - Leitura e compreensão Conclusão: 10/2010<br/>
-● Espanhol Básico-FAETEC -Leitura e compreensão Conclusão: 06/2009<br/>
-● Cursos: Informática Avançada- FAETEC (Windows / Word / Excel /
-PowerPoint / Access). Conclusão: 12/2009<br/>
-● Algoritmos e lógica de programação.<br/>
-        </br>
-<b>CERTIFICAÇÕES:</b><br/>
-● AWS Certified Cloud Practitioner<br/>
-● AWS Certified Solutions Architect
-    </p>
+        <p>Ensino Médio Completo...<br/>
+        Ensino superior - Banco de dados - Uninter - Incompleto.</p>
     </section>
 
+    <!-- Seção Experiência Profissional -->
     <section id="experiencia">
         <h2>Experiência Profissional</h2>
-        <p><b>e-Core Soluções em tecnologia da informação Ltda.Cloud Infrastructure Analyst Intern - 09/2022 -09/2023 (1 ano 1 mês)<br/>
-            Cloud Infrastructure Analyst - Atualmente</b><br/>
-            Função: Atualmente atuo como ponto focal para todas as operações relacionadas à infraestrutura AWS do cliente, incluindo provisionamento, monitoramento e manutenção.<br/>
-            ● Implementar e manter políticas de segurança conforme as diretrizes estabelecidas, garantindo que todas as práticas de segurança sejam seguidas rigorosamente.<br/>
-            ● Identificar oportunidades de otimização de custos e desempenho, garantindo que os recursos AWS sejam utilizados de maneira eficiente e escalável.<br/>
-            <br/>
-            <b>Centro Fisico Gorila’s ltda. 01/22 a 08/22</b><br/>
-            Função: Recepcionista – Atendimento ao cliente, cadastro de novos alunos. Auxílio referente app usado para marcação de aulas. Aux. de escritório- pagamento de contas,envio e recebimento de e-mails.<br/>
-            <br/>
-            <b>Rápido Loja com. de expositores Ltda. 08/2018 a 09/2019</b><br/>
-            Função: Balconista – Atendimento ao cliente, orçamento de balcão, atendimento presencial e online. Alcance de meta estabelecida individual e da loja.</p>
+        <p><b>e-Core Soluções...</b></p>
     </section>
     
+    <!-- Seção Projetos -->
     <section id="projetos">
         <h2>Projetos</h2>
-        <p>Criação de Site Estático com AWS S3 e CloudFront<br/>
-            Migração de banco de dados RDS <br/>
-            Clone site Netflix usando Java e ReactJS
-        </p>
+        <p>Criação de Site Estático com AWS S3 e CloudFront...</p>
     </section>
     
+    <!-- Seção Contato -->
     <section id="contato">
         <h2>Contato</h2>
-        <p><b>&#x1F4DE Telefone:</b> (21)98328-9650<br/>
-            <b>&#x1F4E7 Email:</b> fernandamorimsrj@gmail.com<br/>
-            <b>&#x1F4BB Linkedin:</b> https://www.linkedin.com/in/fernanda-amorim-3626b91ab/
-        </p>
+        <p><b>Telefone:</b> (21)98328-9650</p>
     </section>
     
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 Fernanda Amorim</p>
     </footer>
     
+    <!-- Botão para voltar ao topo -->
     <button id="topo" onclick="voltarAoTopo()">Topo</button>
     
     <script>
+        // Adiciona funcionalidade de rolagem suave ao clicar nos links do menu
         document.querySelectorAll('.scroll-link').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -147,6 +139,7 @@ PowerPoint / Access). Conclusão: 12/2009<br/>
             });
         });
         
+        // Mostra ou oculta o botão de voltar ao topo dependendo da rolagem
         window.addEventListener('scroll', function() {
             const topoButton = document.getElementById('topo');
             if (window.scrollY > 300) {
@@ -156,6 +149,7 @@ PowerPoint / Access). Conclusão: 12/2009<br/>
             }
         });
         
+        // Função para voltar ao topo da página com rolagem suave
         function voltarAoTopo() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
