@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #06090d;
+        }
+        header {
+            background-color: #1976d2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1565c0;
+            color: white;
+        }
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fernanda Amorim</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre" class="scroll-link">Sobre Mim</a></li>
+                <li><a href="#formacao" class="scroll-link">Formação</a></li>
+                <li><a href="#Experiência Profissional" class="scroll-link">Experiência Profissional</a></li>
+                <li><a href="#projetos" class="scroll-link">Projetos</a></li>
+                <li><a href="#contato" class="scroll-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Com experiência na área de análise de infraestrutura de nuvem da AWS, gerenciamento e otimização de soluções de nuvem.<br/>
+            Atualmente, também atuo como Product Owner, garantindo a entrega estratégica de projetos por meio da orquestração hábil de equipes multidisciplinares para atender aos objetivos de negócios.<br/>
+            Possuo experiência em boas práticas de cloud e conceitos de cibersegurança, sempre buscando aprendizado contínuo para enfrentar desafios e agregar valor às organizaçõe</p>
+    </section>
+    
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>Ensino Médio Completo Geral - Conclusão: 12/2008 <br/>
+        Ensino superior -Banco de dados- Uninter - Incompleto.<br/>
+        <br/>
+       <b> INFORMAÇÕES ADICIONAIS:</b> <br/>
+● Inglês Básico-FAETEC - Leitura e compreensão Conclusão: 10/2010<br/>
+● Espanhol Básico-FAETEC -Leitura e compreensão Conclusão: 06/2009<br/>
+● Cursos: Informática Avançada- FAETEC (Windows / Word / Excel /
+PowerPoint / Access). Conclusão: 12/2009<br/>
+● Algoritmos e lógica de programação.<br/>
+        </br>
+<b>CERTIFICAÇÕES:</b><br/>
+● AWS Certified Cloud Practitioner<br/>
+● AWS Certified Solutions Architect
+    </p>
+    </section>
+
+    <section id="Experiência">
+        <h2>Experiência</h2>
+        <p><b>e-Core Soluções em tecnologia da informação Ltda.Cloud Infrastructure Analyst Intern - 09/2022 -09/2023 (1 ano 1 mês)<br/>
+            Cloud Infrastructure Analyst - Atualmente</b><br/>
+            Função: Atualmente atuo como ponto focal para todas as operações relacionadas à infraestrutura AWS do cliente, incluindo provisionamento, monitoramento e manutenção.<br/>
+            ● Implementar e manter políticas de segurança conforme as diretrizes estabelecidas, garantindo que todas as práticas de segurança sejam seguidas rigorosamente.<br/>
+            ● Identificar oportunidades de otimização de custos e desempenho, garantindo que os recursos AWS sejam utilizados de maneira eficiente e escalável.<br/>
+            <br/>
+            <b>Centro Fisico Gorila’s ltda. 01/22 a 08/22</b><br/>
+            Função: Recepcionista – Atendimento ao cliente, cadastro de novos alunos. Auxílio referente app usado para marcação de aulas. Aux. de escritório- pagamento de contas,envio e recebimento de e-mails.<br/>
+            <br/>
+            <b>Rápido Loja com. de expositores Ltda. 08/2018 a 09/2019</b><br/>
+            Função: Balconista – Atendimento ao cliente, orçamento de balcão, atendimento presencial e online. Alcance de meta estabelecida individual e da loja.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Projetos</h2>
+        <p>Criação de Site Estático com AWS S3 e CloudFront<br/>
+            Migração de banco de dados RDS <br/>
+            Clone site Netflix usando Java e ReactJS
+        </p>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p><b>&#x1F4DE Telefone:</b> (21)98328-9650<br/>
+            <b>&#x1F4E7 Email:</b> fernandamorimsrj@gmail.com<br/>
+            <b>&#x1F4BB Linkedin:</b> https://www.linkedin.com/in/fernanda-amorim-3626b91ab/
+        </p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Fernanda Amorim</p>
+    </footer>
+    
+    <button id="topo" onclick="voltarAoTopo()">Topo</button>
+    
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        window.addEventListener('scroll', function() {
+            const topoButton = document.getElementById('topo');
+            if (window.scrollY > 300) {
+                topoButton.style.display = 'block';
+            } else {
+                topoButton.style.display = 'none';
+            }
+        });
+        
+        function voltarAoTopo() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
